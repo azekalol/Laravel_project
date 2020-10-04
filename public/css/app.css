@@ -1,0 +1,59 @@
+body {
+  background-color: #ffffff;
+}
+
+#wrap {
+  min-width: 900px;
+  margin: 0 50px;
+}
+#content {
+  margin-right: 400px;
+  text-align: justify;
+}
+#content p{
+  padding: 5px 30px;
+}
+.back-block {
+  background-color: #e2ec2229;
+  width: 80%;
+  margin-left: 85px;
+}
+.last_link {
+  text-align: center;
+}
+.aside {
+  float: right;
+  width: 400px;
+}
+.center {
+  text-align: center;
+}
+.center-img {
+  width: 80%;
+}
+.right-img {
+  width: 100%;
+}
+.right-post {
+  text-align: center;
+  margin-bottom: 30px;
+}
+h2 {
+  text-align: center;
+}
+
+/*
+*
+*
+*
+Форма
+*****************/
+.form-group {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.btn {
+  margin-left: 275px;
+  width: 300px;
+}
