@@ -7,24 +7,32 @@ use App\Http\Requests\LoginRequest;
 
 use App\Http\Requests\SignupRequest;
 
+use App\Models\Login;
+
 class FormController extends Controller
 {
     public function login(LoginRequest $req)
     {
-      //$validation = $req -> validate([
-        //'name' => 'required|min:3|max:10',
-        //'password' => 'required|min:7|max:22'
-      //]);
+      $login = new Login();
+      $login->name = $req->input('name');
+      //$login->email = $req->input('email');
+      $login->password = $req->input('password');
+
+      $login->save();
+
+      return redirect()-> route('home');
     }
 
     public function signup(SignupRequest $req)
     {
-      //$validation = $req -> validate([
-        //'name' => 'required|min:3|max:10',
-        //'email' => 'required|min:17|max:52',
-        //'password' => 'required|min:7|max:22'
-        //'password-control' => 'required|min:7|max:22'
-      //]);
+      $login = new Login();
+      $login->name = $req->input('name');
+      $login->email = $req->input('email');
+      $login->password = $req->input('password');
+
+      $login->save();
+
+      return redirect()-> route('home');
     }
 
 }
